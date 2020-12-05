@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Turning Patterns into Profits</title>
+        <title>Customer Breakdown</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
@@ -113,8 +113,7 @@
                                     <!-- <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a> -->
                                 </nav>
                             </div>
-                            
-                        </div> 
+                        </div>    
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Proudly presented by:</div>
@@ -125,96 +124,53 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Turning Patterns into Profits</h1>
+                        <h1 class="mt-4">What Do Our Customers Look Like?</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Project Components</li>
+                            <li class="breadcrumb-item active"></li>
                         </ol>
+                        
+                          
+                            
+                            
+                            
                         <div class="row">
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-primary text-white mb-4">
-                                    <div class="card-body">Analytics in Retail</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">Use analytic insights to engage customers more effectively and build brand loyalty. 
-                                            Using advance analytics and machine learning to identify patterns and trends of customers habbits we are able to drive product 
-                                            recommendations by market and product category to take any business to the next level. </a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">Project Scope</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">Analyze the day-to-day transactions to predict future purchases across all categories.
-                                            What recomendations would we make for our target customer based on customer demographics and purchase history.
-                                        </a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-success text-white mb-4">
-                                    <div class="card-body">Target Questions</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">Where are the business trends? Analyze location, category, seasonality, overall sales,
-                                            customer retention (Churn) and customer lifetime value (CLTV).
-                                        </a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-danger text-white mb-4">
-                                    <div class="card-body">About the Data</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">Data Sample 3 years, 25k transactions, customer demographics, purchase location and product hierarchy.</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-6">
+                            <div class="col-lg-8">
                                 <div class="card mb-4">
-                                    <div class="card-header">
+                                    <div class="card-header" style="color: white; background-color: navy;">
                                         <i class="fas fa-chart-area mr-1"></i>
-                                        Bar Chart of Yearly Sales
+                                        I first grouped the data by Customer ID and then filtered it to only
+                                        show customers with more than 6 total transactions to create a data frame
+                                        of repeat customers.  I then created a column called 'birth_decade' which 
+                                        grouped all the customers by the decade in which they were born.  The 'count'
+                                        displays the sum of customers for each 'birth_decade'.  We can see that 
+                                        customers born in the 1990's make up a much smaller portion of the total
+                                        than the 70's and 80's.  The company should find a way to target marketing
+                                        towards this demographic. 
                                     </div>
                                     <!-- <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div> -->
-                                    <img src="Images/past_sales.png" class="img-responsive"  alt="Past Sales Table" height="600"></a>
+                                    <img src="Images/repeat_decade.jpg" class="img-responsive"  alt="Past Sales Table" width=100% ></a>
                                 </div>
                             </div>
-                            <div class="col-xl-6">
+                            <div class="col-lg-10">
                                 <div class="card mb-4">
-                                    <div class="card-header">
+                                    <div class="card-header" style="color: white; background-color: navy;">
                                         <i class="fas fa-chart-bar mr-1"></i>
-                                        Future Prediction
+                                        When the repeat customers are grouped by "city_code" it becomes apparent
+                                        that 0.0 has an almost non-existent cutomer base.  The company should consider
+                                        marketing more to that region to increase its total customers.
                                     </div>
                                     <!-- <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div> -->
-                                    <img src="Images/Forecast.png" class="img-responsive"  alt="Forecast Table" ></a>
+                                    <img src="Images/repeat_city.jpg" class="img-responsive"  alt="Forecast Table" width=550px></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-table mr-1"></i>
-                                DataTable Example
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                        <!-- <a class = "panel" href="tables.html"> -->
-                                            <img src="Images/Data Table.png" class="img-responsive"  alt="Data Table"></a>
-                                        </div>
-                                        <!-- <thead>
-                                       
-                                        </tbody>
-                                    </table> -->
-                                </div>
-                            </div>
-                        </div>
+                        
+                        
+                        
+                        
                     </div>
                 </main>
+
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
                         <div class="d-flex align-items-center justify-content-between small">

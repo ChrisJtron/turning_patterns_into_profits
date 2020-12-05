@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Turning Patterns into Profits</title>
+        <title>Basket Analysis</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
@@ -110,11 +110,9 @@
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="forecast_page.html">Forecasts</a>
-                                    <!-- <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a> -->
                                 </nav>
                             </div>
-                            
-                        </div> 
+                        </div>    
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Proudly presented by:</div>
@@ -125,96 +123,113 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Turning Patterns into Profits</h1>
+                        <h1 class="mt-4">Determining Which Items Are Often Sold Together</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Project Components</li>
+                            <li class="breadcrumb-item active"></li>
                         </ol>
+                        
+                          
+                            
+                            
+                            
                         <div class="row">
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-primary text-white mb-4">
-                                    <div class="card-body">Analytics in Retail</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">Use analytic insights to engage customers more effectively and build brand loyalty. 
-                                            Using advance analytics and machine learning to identify patterns and trends of customers habbits we are able to drive product 
-                                            recommendations by market and product category to take any business to the next level. </a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">Project Scope</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">Analyze the day-to-day transactions to predict future purchases across all categories.
-                                            What recomendations would we make for our target customer based on customer demographics and purchase history.
-                                        </a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-success text-white mb-4">
-                                    <div class="card-body">Target Questions</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">Where are the business trends? Analyze location, category, seasonality, overall sales,
-                                            customer retention (Churn) and customer lifetime value (CLTV).
-                                        </a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-danger text-white mb-4">
-                                    <div class="card-body">About the Data</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">Data Sample 3 years, 25k transactions, customer demographics, purchase location and product hierarchy.</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-6">
+                            <div class="col-lg-8">
                                 <div class="card mb-4">
-                                    <div class="card-header">
+                                    <div class="card-header" style="color: white; background-color: navy;">
                                         <i class="fas fa-chart-area mr-1"></i>
-                                        Bar Chart of Yearly Sales
+                                        The Apriori Algorithm iterates through all possible combinations of items, counting how many
+                                        times each set appears, comparing it to the sales as a whole, and taking into account how
+                                        many times such a combination is likely to occur by chance.
                                     </div>
                                     <!-- <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div> -->
-                                    <img src="Images/past_sales.png" class="img-responsive"  alt="Past Sales Table" height="600"></a>
+                                    <img src="Images/import_apriori.png" class="img-responsive"  alt="Past Sales Table" width=100% ></a>
                                 </div>
                             </div>
-                            <div class="col-xl-6">
+                            <div class="col-lg-10">
                                 <div class="card mb-4">
-                                    <div class="card-header">
+                                    <div class="card-header" style="color: white; background-color: navy;">
                                         <i class="fas fa-chart-bar mr-1"></i>
-                                        Future Prediction
+                                        Here is a more detailed description of the metrics used in the results.
                                     </div>
                                     <!-- <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div> -->
-                                    <img src="Images/Forecast.png" class="img-responsive"  alt="Forecast Table" ></a>
+                                    <img src="Images/Apriori_Measures.png" class="img-responsive"  alt="Forecast Table" height=450px></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-table mr-1"></i>
-                                DataTable Example
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <div class="row">
+                            <div class="card mb-4">
+                                <div class="card-header" style="color: white; background-color: navy;">
+                                    <i class="fas fa-table mr-1"></i>
+                                     Create a unique product id by combining Category id with Subcategory id
+                                </div>
+                            
+                                <div class="col-lg-4">
                                         <!-- <a class = "panel" href="tables.html"> -->
-                                            <img src="Images/Data Table.png" class="img-responsive"  alt="Data Table"></a>
-                                        </div>
-                                        <!-- <thead>
-                                       
-                                        </tbody>
-                                    </table> -->
+                                    <img src="Images/create_prod_id.png" class=img-responsive height=300px  alt="Data Table"></a>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card mb-4">
+                                <div class="card-header" style="color: white; background-color: navy;">
+                                    <i class="fas fa-table mr-1"></i>
+                                     Each transaction only included 1 type of item.  Ideally, we would like to see which
+                                     items are purchased at the same time for product placement purposes and promotional sales.
+                                     Since this dataset did not allow for that, we will group by Customer ID. Even if the
+                                     items were not purchased at the same time, it will be useful to know what items people
+                                     are likely to purchase later.
+                                </div>
+                            
+                                <div class="col-lg-6">
+                                        <!-- <a class = "panel" href="tables.html"> -->
+                                    <img src="Images/group_by_customer.png" class=img-responsive height=300px  alt="Data Table"></a>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card mb-4">
+                                <div class="card-header" style="color: white; background-color: navy;">
+                                    <i class="fas fa-table mr-1"></i>
+                                     The data is changed to a binary format to be used in the algorithm and represents either a purchase or no purchase.
+                                </div>
+                            
+                                <div class="col-lg-6">
+                                        <!-- <a class = "panel" href="tables.html"> -->
+                                    <img src="Images/binary_encode.png" class=img-responsive height=600px alt="Data Table"></a>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-7">
+                                <div class="card mb-4">
+                                    <div class="card-header" style="color: white; background-color: navy;">
+                                        <i class="fas fa-chart-area mr-1"></i>
+                                        Results sorted by "Lift" and "Conviction"<br>
+                                        <br>
+                                        Even when sorted by different metrics, we can see many of the same itemsets
+                                        in the top rankings (marked with red).
+                                    </div>
+                                    <!-- <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div> -->
+                                    <img src="Images/Apriori_Recs.jpg" class="img-responsive"  alt="Past Sales Table" height="600"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-5">
+                                <br>
+                                <br>
+                                <br>
+                                <div class="card mb-4">
+                                    <div class="card-header" style="color: white; background-color: navy;">
+                                        <i class="fas fa-chart-bar mr-1"></i>
+                                        Results sorted by "Support"
+                                    </div>
+                                    
+                                    <img src="Images/Apriori_Recs_2_cropped.jpg" class="img-responsive"  alt="Forecast Table" height="400" ></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </main>
+
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
                         <div class="d-flex align-items-center justify-content-between small">
