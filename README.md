@@ -1,3 +1,5 @@
+This code was forked from our group project so that I could add a "Prescriptive" tab to showcase my contribution
+
 # turning_patterns_into_profits
 Analysts: Dave Borowski, Brooke Crofts, Chris Joncha, Curtis Caile, Meg Estey
 
